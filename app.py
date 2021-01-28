@@ -171,7 +171,7 @@ def webhook():
                         #training_model.save()
                         training_model.save_weights(base_dir)
 
-                        entrenamiento = base_dir + 'entrenado' 
+                        entrenamiento = base_dir + my_weightsmodel' 
                         #training_model = load_model(entrenamiento)
                         training_model.load_weights(entrenamiento)
                         encoder_inputs = training_model.input[0]
