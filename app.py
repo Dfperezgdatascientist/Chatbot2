@@ -62,7 +62,7 @@ def webhook():
                         base1 = os.getcwd()
                         base_dir= base1 + "/"
                         data_path = base_dir + "preguntaciencia.txt"
-                        data_path2 = base_dir + "respuestacisncia.txt"
+                        data_path2 = base_dir + "respuestaciencia.txt"
                         # Defining lines as a list of each line
                         with open(data_path, 'r', encoding='utf-8') as f:
                           lines = f.read().split('\n')
@@ -225,7 +225,7 @@ def webhook():
                             user_response = input("hola"+"\n")
 
                             if user_response in self.negative_responses:
-                              print("Ok, Que tengas un gran día!")
+                              print("Ok, Que tengas un gran dÃ­a!")
                               return
                             self.chat(user_response)
                         #Method to handle the conversation
@@ -256,7 +256,7 @@ def webhook():
                           def make_exit(self, reply):
                             for exit_command in self.exit_commands:
                               if exit_command in reply:
-                                print("Ok, Que tengas buen di�a!")
+                                print("Ok, Que tengas buen di­a!")
                                 return True
                             return False
 
